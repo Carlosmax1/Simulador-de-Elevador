@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Simulador de Elevador</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="elevadores">
+        <div class="elevador" id="elevadorA">
+          <h1>Elevador A</h1>
+          <span id="andarAtual">Andar autal: 0</span>
+          <span id="direcao">Direção: Parado</span>
+        </div>
+
+        <div class="elevador" id="elevadorB">
+          <h1>Elevador B</h1>
+          <span id="andarAtual">Andar autal: 0</span>
+          <span id="direcao">Direção: Parado </span>
+        </div>
+
+        <form>
+          <input type="number" placeholder="Origem" name="origem" id="origem" />
+          <input
+            type="number"
+            name="destino"
+            id="destino"
+            placeholder="Destino"
+          />
+          <button type="submit">Chamar elevador</button>
+        </form>
+      </div>
+      <div class="fila-status">
+        <h2>Fila de Requisições</h2>
+        <ul id="fila-status-list"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
